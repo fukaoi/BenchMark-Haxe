@@ -4,20 +4,21 @@ BenchMarking class for Haxe.
 
 ##Example
 
-  var bench = new BenchMark(Test, check, []);
-  bench.start(10);
-  bench.end();
+    var bench = new BenchMark(Test, check, []);
+    bench.start(10);
+    bench.end();
 
 
 ##Parameters
 
-new BenchMark(funk, obj, args);
+    new BenchMark(funk, obj, args);
 
 * func:Target function or method
 * obj:Setting this if func is instance method
 * args:for func of parameter
 
-bench.start(10);
+
+    bench.start(10);
 
 * loopCount:number of times
 
