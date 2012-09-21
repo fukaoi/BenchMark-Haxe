@@ -2,14 +2,12 @@
 
 BenchMarking class for Haxe.
 
----------------------------------------
-## usage
+### usage
   var bench = new BenchMark(Test, check, []);
   bench.start(10);
   bench.end();
 
----------------------------------------
-## parameters
+### parameters
 new BenchMark(funk, obj, args);
 
 * func:Target function or method
@@ -20,8 +18,7 @@ bench.start(10);
 
 * loopCount:number of times
 
----------------------------------------
-## reults
+### reults
   [target name] Test.check
   [loop count] 10
   [time] 0.011/sec
