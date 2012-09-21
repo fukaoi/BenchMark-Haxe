@@ -18,6 +18,7 @@ BenchMarking class for Haxe.
 * args:for func of parameter
 
 
+
     bench.start(10);
 
 * loopCount:number of times
@@ -25,8 +26,8 @@ BenchMarking class for Haxe.
 
 ##Reults
 
-  [target name] Test.check
-  [loop count] 10
-  [time] 0.011/sec
+    [target name] Test.check
+    [loop count] 10
+    [time] 0.011/sec
 
 
