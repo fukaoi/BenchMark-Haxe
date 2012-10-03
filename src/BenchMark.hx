@@ -50,7 +50,7 @@ class BenchMark {
   **/
   public function end():Void {
     endTime = Date.now().getTime();
-    var resultTime = endTime - startTime;
+    var resultTime:Float = endTime - startTime;
     disp(resultTime / 1000);
   }
 
@@ -91,9 +91,11 @@ class BenchMark {
   private function disp(resultTime:Float) {
     var funcName = pos.className + "." + pos.methodName;
     var lineNumber = pos.lineNumber;
+    var zeroCheck = (resultTime == 0 ? "0.000" : Std.string(resultTime));
+    var digiCheck = StringTools.rpad(zeroCheck, "0", 5);
     trace("[target name] $funcName".format());
     trace("[line number] $lineNumber".format());
     trace("[loop count] $loopCount".format());
-    trace("[time] $resultTime/sec".format());
+    trace("[time] $digiCheck/sec".format());
   }
 }
